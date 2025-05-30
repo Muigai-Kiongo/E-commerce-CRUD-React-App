@@ -1,0 +1,11 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name":"blender",
+            "description": "",
+            "price":"Ksh.2500/-",
+            "image": "./images/fridge.png"
+        }
+    ]
+}
