@@ -12,6 +12,7 @@ export const useCart = () => {
 
   const addToCart = (product) => {
     setCartItems([...cartItems, product]);
+    alert(`${product.name} has been added to Cart`);
   };
 
   const removeFromCart = (id) => {
