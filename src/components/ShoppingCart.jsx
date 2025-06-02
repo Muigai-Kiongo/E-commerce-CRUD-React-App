@@ -1,18 +1,28 @@
+import React from "react";
+
 const ShoppingCart = ({ cartItems, removeFromCart, totalPrice }) => {
   return (
-    <div>
-      <h1>Shopping Cart</h1>
+    <div className="shopping-cart">
+      <h1 className="cart-title">Shopping Cart</h1>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty</p>
+        <p className="empty-cart">Your cart is empty</p>
       ) : (
-        <div>
+        <div className="cart-items">
           {cartItems.map((item) => (
-            <div key={item.id}>
-              <h2>{item.name}</h2>
-              <button onClick={() => removeFromCart(item.id)}>Remove</button>
+            <div key={item.id} className="cart-item">
+              <h2 className="item-name">{item.name}</h2>
+              <p>Ksh.{item.price}</p>
+              <button
+                className="remove-button"
+                onClick={() => removeFromCart(item.id)}
+              >
+                Remove
+              </button>
             </div>
           ))}
-          <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
+          <h3 className="total-price">
+            Total Price: Ksh {totalPrice.toFixed(2)}
+          </h3>
         </div>
       )}
     </div>

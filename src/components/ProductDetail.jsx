@@ -16,18 +16,20 @@ const ProductDetail = ({ products }) => {
   };
 
   return (
-    <>
-      <div className="product">
-        <h1>{product.name}</h1>
+    <main>
+      <h1>{product.name}</h1>
+      <div className="product-detail">
         <img className="image" src={product.image} alt={product.name} />
-        <p className="price">Ksh.{product.price}/-</p>
-        <p className="details">{product.shortDescription}</p>
-        <p className="details">{product.longDescription}</p>
-        <button onClick={handleAddToCart}>Add to Cart</button>
+        <div>
+          <p className="price">Ksh.{product.price}/-</p>
+          <p className="details">{product.shortDescription}</p>
+          <p className="details">{product.longDescription}</p>
+          <button onClick={handleAddToCart}>Add to Cart</button>
+        </div>
       </div>
       <h3>You may also like</h3>
       <ProductList products={products} addToCart={addToCart} />
-    </>
+    </main>
   );
 };
 

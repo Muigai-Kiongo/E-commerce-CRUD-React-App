@@ -17,6 +17,11 @@ const ProductList = ({ products, addToCart }) => {
           </div>
         ))}
       </div>
+      <span className="float-button">
+        <Link to={`/add-product`}>
+          <h1>+</h1>
+        </Link>
+      </span>
     </main>
   );
 };
