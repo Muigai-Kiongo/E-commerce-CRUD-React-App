@@ -7,6 +7,7 @@ import AddProduct from "./components/AddProduct";
 import ShoppingCart from "./components/ShoppingCart";
 import { useCart } from "./hooks/useCart";
 import products from "./components/products";
+import LandingPage from "./components/LandingPage";
 
 const App = () => {
   const { cartItems, addToCart, removeFromCart, totalPrice } = useCart();
@@ -54,8 +55,9 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route
-          path="/"
+          path="/products"
           element={
             <ProductList products={combinedProducts} addToCart={addToCart} />
           }

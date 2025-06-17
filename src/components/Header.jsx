@@ -2,12 +2,15 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="header">
+    <div className="flex items-center justify-between text-gray-200 text-3xl bg-sky-800 h-15 ">
       <Link to={`/`}>
-        <h1>U&I Sales</h1>
+        <h1 className="font-sans font-bold  hover:text-blue-500">U&I Sales</h1>
+      </Link>
+      <Link to={`/products`}>
+        <h1 className="font-serif hover:text-blue-500">Products</h1>
       </Link>
       <Link to={`/shopping-cart`}>
-        <h1>Cart</h1>
+        <h1 className="font-serif hover:text-blue-500">Cart</h1>
       </Link>
     </div>
   );

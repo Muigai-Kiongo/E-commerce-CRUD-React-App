@@ -26,6 +26,8 @@ const AddProduct = ({ addProduct }) => {
 
   return (
     <div className="add-product-form">
+      <Header />
+
       <h3>Add New Product</h3>
       <br />
       <form onSubmit={handleSubmit}>
