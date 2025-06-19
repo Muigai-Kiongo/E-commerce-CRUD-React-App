@@ -8,6 +8,8 @@ import ShoppingCart from "./components/ShoppingCart";
 import { useCart } from "./hooks/useCart";
 import products from "./components/products";
 import LandingPage from "./components/LandingPage";
+import Footer from "./components/Footer";
+import "./App.css";
 
 const App = () => {
   const { cartItems, addToCart, removeFromCart, totalPrice } = useCart();
@@ -83,6 +85,7 @@ const App = () => {
           element={<AddProduct addProduct={addProduct} />}
         />
       </Routes>
+      <Footer />
     </Router>
   );
 };
