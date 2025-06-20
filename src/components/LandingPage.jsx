@@ -7,13 +7,15 @@ const LandingPage = () => {
         className=" h-screen flex items-center justify-center text-center bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url(/images/intro.jpg)" }}
       >
-        <div className="flex flex-col w-1/2 h-1/2 justify-center items-center backdrop-blur-3xl  ">
+        <div className="flex flex-col w-full h-1/2 md:w-1/2 justify-center items-center backdrop-blur-3xl  ">
           <img
             className="w-25 h-25 mb-4"
             src="/images/images.png"
             alt="U&I Sales Logo"
           />
-          <h1 className="font-sans font-bold text-6xl mb-2">{"U&I Sales "}</h1>
+          <h1 className="font-sans font-bold text-4xl md:text-6xl mb-2">
+            {"U&I Sales "}
+          </h1>
           <p className="font-serif text-3xl">
             {"Premium shopping experience at your fingertips."}
           </p>

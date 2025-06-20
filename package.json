@@ -11,6 +11,7 @@
     "api": "json-server --watch db.json --port 6001"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "@tailwindcss/vite": "^4.1.10",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
